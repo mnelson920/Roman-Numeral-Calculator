@@ -1,0 +1,4 @@
+#include "../src/roman_numeral.h"
+
+#test romanLetterValue_test
+    ck_assert_int_eq(romanLetterValue('I'), 1);
