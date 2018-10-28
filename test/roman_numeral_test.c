@@ -12,6 +12,12 @@ START_TEST(romanLetterValue_test)
 {
 #line 4
     ck_assert_int_eq(romanLetterValue('I'), 1);
+    ck_assert_int_eq(romanLetterValue('V'), 5);
+    ck_assert_int_eq(romanLetterValue('X'), 10);
+    ck_assert_int_eq(romanLetterValue('L'), 50);
+    ck_assert_int_eq(romanLetterValue('C'), 100);
+    ck_assert_int_eq(romanLetterValue('D'), 500);
+    ck_assert_int_eq(romanLetterValue('M'), 1000);
 }
 END_TEST
 
