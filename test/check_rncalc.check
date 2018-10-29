@@ -8,3 +8,6 @@
     ck_assert_int_eq(romanLetterValue('C'), 100);
     ck_assert_int_eq(romanLetterValue('D'), 500);
     ck_assert_int_eq(romanLetterValue('M'), 1000);
+
+#test decimalFromRomanNum_test
+    ck_assert_int_eq(romanToInt("IX"), 9);
