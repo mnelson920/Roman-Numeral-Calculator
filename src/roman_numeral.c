@@ -40,3 +40,9 @@ extern int romanToInt(char* s)
     }
     return result;
 }
+
+extern int sumOfRoman(char* romanOne, char* romanTwo){
+   short int firstNum = romanToInt(romanOne);
+   short int secondNum = romanToInt(romanTwo);
+   return firstNum + secondNum;
+}

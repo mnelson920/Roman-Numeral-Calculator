@@ -16,3 +16,6 @@
     ck_assert_int_eq(romanToInt("LXVIII"), 68);
     ck_assert_int_eq(romanToInt("XXXXIX"), 49);
 
+#test sumOfRoman_test
+    ck_assert_int_eq(sumOfRoman("D", "X"), 510);
+
