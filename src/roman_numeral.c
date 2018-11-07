@@ -44,6 +44,8 @@ extern int romanToInt(char* s)
 extern int sumOfRoman(char* romanOne, char* romanTwo){
    short int firstNum = romanToInt(romanOne);
    short int secondNum = romanToInt(romanTwo);
+   printf ("Input 1: %s | Input 2: %s\n", romanOne, romanTwo);
+   printf ("The sum of %d and %d is: %d | Roman Numeral: %s\n", firstNum, secondNum, firstNum + secondNum, intToRoman(firstNum+secondNum));
    return firstNum + secondNum;
 }
 
