@@ -19,3 +19,6 @@
 #test sumOfRoman_test
     ck_assert_int_eq(sumOfRoman("D", "X"), 510);
 
+#test diffOfRoman_test
+    ck_assert_int_eq(diffOfRoman("X", "V"), 5);
+

@@ -46,3 +46,8 @@ extern int sumOfRoman(char* romanOne, char* romanTwo){
    short int secondNum = romanToInt(romanTwo);
    return firstNum + secondNum;
 }
+extern int diffOfRoman(char* romanOne, char* romanTwo){
+   short int firstNum = romanToInt(romanOne);
+   short int secondNum = romanToInt(romanTwo);
+   return firstNum - secondNum;
+}

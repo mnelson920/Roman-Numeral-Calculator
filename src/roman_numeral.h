@@ -3,6 +3,8 @@
 
 extern int romanLetterValue(char letter);
 extern int romanToInt(char* s);
+extern int sumOfRoman(char* romanOne, char* romanTwo);
+extern int diffOfRoman(char* romanOne, char* romanTwo);
 
 #endif //RomanNumeralCalc_H_
 
