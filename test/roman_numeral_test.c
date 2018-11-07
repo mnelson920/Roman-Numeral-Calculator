@@ -22,10 +22,12 @@ START_TEST(romanLetterValue_test)
 }
 END_TEST
 
-START_TEST(decimalFromRomanNum_test)
+START_TEST(romanToInt_test)
 {
 #line 13
     ck_assert_int_eq(romanToInt("IX"), 9);
+    ck_assert_int_eq(romanToInt("VI"), 6);
+
 }
 END_TEST
 
@@ -38,7 +40,7 @@ int main(void)
 
     suite_add_tcase(s1, tc1_1);
     tcase_add_test(tc1_1, romanLetterValue_test);
-    tcase_add_test(tc1_1, decimalFromRomanNum_test);
+    tcase_add_test(tc1_1, romanToInt_test);
 
     srunner_run_all(sr, CK_ENV);
     nf = srunner_ntests_failed(sr);

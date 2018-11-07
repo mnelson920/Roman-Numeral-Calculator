@@ -14,9 +14,6 @@ extern int romanLetterValue(char letter)
         case 'C': return 100;
         case 'D': return 500;
         case 'M': return 1000;
-        //default:
-            //fprintf(stderr,"error: Invalid Roman Numeral '%c' \n", letter);
-            //exit(1);
     }
     return 0;
 }
