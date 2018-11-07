@@ -50,6 +50,14 @@ START_TEST(diffOfRoman_test)
 }
 END_TEST
 
+START_TEST(intToRoman_test)
+{
+#line 26
+    ck_assert_str_eq(intToRoman(10), "X");
+
+}
+END_TEST
+
 int main(void)
 {
     Suite *s1 = suite_create("Core");
@@ -62,6 +70,7 @@ int main(void)
     tcase_add_test(tc1_1, romanToInt_test);
     tcase_add_test(tc1_1, sumOfRoman_test);
     tcase_add_test(tc1_1, diffOfRoman_test);
+    tcase_add_test(tc1_1, intToRoman_test);
 
     srunner_run_all(sr, CK_ENV);
     nf = srunner_ntests_failed(sr);

@@ -46,8 +46,48 @@ extern int sumOfRoman(char* romanOne, char* romanTwo){
    short int secondNum = romanToInt(romanTwo);
    return firstNum + secondNum;
 }
+
 extern int diffOfRoman(char* romanOne, char* romanTwo){
    short int firstNum = romanToInt(romanOne);
    short int secondNum = romanToInt(romanTwo);
    return firstNum - secondNum;
+}
+
+extern char* intToRoman(short int result){
+    char *c[4][10] = {
+        {"","I","II","III","IV","V","VI","VII","VIII","IX"},
+        {"","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"},
+        {"","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"},
+        {"","M","MM","MMM"}
+    };
+
+    char *ret = (char *)malloc(sizeof(char)*20);
+    int count = 0;
+    
+    char *temp = c[3][result/1000];
+    while(*temp!='\0'){
+        ret[count++]=*temp;
+        temp++;
+    }
+    
+    temp = c[2][result/100%10];
+    while(*temp!='\0'){
+        ret[count++]=*temp;
+        temp++;
+    }
+    
+    temp = c[1][result/10%10];
+    while(*temp!='\0'){
+        ret[count++]=*temp;
+        temp++;
+    }
+    
+    temp = c[0][result%10];
+    while(*temp!='\0'){
+        ret[count++]=*temp;
+        temp++;
+    }
+    
+    ret[count++]='\0';
+    return ret;
 }

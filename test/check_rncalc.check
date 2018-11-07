@@ -22,3 +22,6 @@
 #test diffOfRoman_test
     ck_assert_int_eq(diffOfRoman("X", "V"), 5);
 
+#test intToRoman_test
+    ck_assert_str_eq(intToRoman(10), "X");
+
