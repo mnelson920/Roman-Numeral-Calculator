@@ -9,7 +9,7 @@ TEST_FILES = $(addprefix $(TST_DIR)/, *.c)
 GCOV = gcovr 
 GCONV_FLAGS = -r . --html --html-details 
 
-all: coverage_report.html
+all: test
 
 main.o: $(addprefix $(SRC_DIR)/, main.c) $(addprefix $(SRC_DIR)/, roman_numeral.h)
 	$(cc) $(CFLAGS) $(addprefix $(SRC_DIR)/, main.c)
@@ -29,10 +29,7 @@ RomanNumeralCalc-test: roman_numeral_test.o roman_numeral.o
 test: RomanNumeralCalc-test
 	./RomanNumeralCalc-test
 
-coverage_report.html: test
-	$(GCOV) $(GCONV_FLAGS) -o coverage_report.html
-
 .PHONY: clean all
 
 clean:
-	-rm *.o *.html *.gcda *.gcno RomanNumeralCalc-test
+	-rm *.o RomanNumeralCalc-test

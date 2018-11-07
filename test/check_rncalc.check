@@ -12,4 +12,6 @@
 #test romanToInt_test
     ck_assert_int_eq(romanToInt("IX"), 9);
     ck_assert_int_eq(romanToInt("VI"), 6);
+    ck_assert_int_eq(romanToInt("III"), 3);
+    ck_assert_int_eq(romanToInt("LXVIII"), 68);
 
