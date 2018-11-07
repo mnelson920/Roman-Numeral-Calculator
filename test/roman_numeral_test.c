@@ -54,7 +54,7 @@ START_TEST(intToRoman_test)
 {
 #line 26
     ck_assert_str_eq(intToRoman(10), "X");
-
+    ck_assert_str_eq(intToRoman(25), "XXV");
 }
 END_TEST
 
