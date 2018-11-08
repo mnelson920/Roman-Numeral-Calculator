@@ -1,6 +1,6 @@
 cc = gcc
-CFLAGS = -c -Wall
-LIBS = -lcheck -lm -lpthread -lrt -lsubunit
+CFLAGS = -c -Wall -std=c99
+LIBS = -lcheck -lm -lpthread -lrt
 COV_LIBS = -lgcov -coverage
 SRC_DIR = src
 TEST_DIR = test
