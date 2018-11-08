@@ -18,6 +18,7 @@
 * GNU GCC Compiler
 * GNU Make
 * Check
+* Git
 
 ### How to use
 
